@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    margin:0;
+    height:100vh;
+    text-align: center;
+    font-family: new;
+}
+@font-face {
+    font-family: new;
+    src: url(./assets/Poppins-SemiBold.ttf);
+}
+
+.activity{
+    @apply  w-96 flex flex-col m-10 bg-[#ffe9ce] p-5 rounded-lg
+            shadow-xl;
+}
+.yoga{
+    @apply w-full max-w-80 h-44
+    bg-green-200 p-5 flex flex-row 
+     justify-center items-center rounded-lg;
+}
+.cycling{
+    @apply w-full max-w-80 h-44 mt-4
+    bg-[#ff92a4]  p-5 flex flex-row 
+     justify-center items-center rounded-lg;
+}
+.running{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    @apply w-full max-w-80 h-44 mt-4
+      p-5 flex flex-row 
+     justify-center items-center rounded-lg;
+}
+.names{
+    @apply flex flex-row p-5 justify-center;
+}
+.names button{
+    @apply mx-5;
+}
+
+    .names .outdoor {
+        @apply  hover:text-white active:text-green-400;
+
+    }
+    .names .indoor {
+        @apply  hover:text-white active:text-green-400;
+
+    }
+
+.studying{
+    @apply w-full max-w-80 h-44
+    bg-green-200 p-5 flex flex-row 
+     justify-center items-center rounded-lg;
+
+}
+
+.reading{
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    @apply w-full max-w-80 h-44
+    mt-3
+     p-5 flex flex-row 
+     justify-center items-center rounded-lg;
+
+}
+.skipping{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    @apply w-full max-w-80 h-44
+    mt-3
+     p-5 flex flex-row 
+     justify-center items-center rounded-lg;
+
+}
+.bar{
+    @apply w-24 h-24 m-5
+     p-2 rounded-lg;
+}
+.outdash{
+    @apply flex flex-col bg-[#f0f0f6] min-w-fit h-fit m-10 rounded-xl shadow-lg;
+}
+
+
+.date-comp {
+    @apply flex flex-col items-center p-5;
+  }
+  
+  .date-container-column {
+    @apply flex flex-row items-center m-5 p-5 space-x-5;
+  }
+  
+  
+  
+  .date-item {
+    @apply bg-[#f1f1f1] p-5 rounded-xl  shadow-lg;
+  }
+  
+  .day {
+    @apply text-xl;
+  }
+
+  .date{
+    @apply text-xl;
+  }
+  .timer{
+    background: rgb(253,29,29);
+    background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(126,16,200,0.46271008403361347) 0%, rgba(69,177,252,1) 87%);
+    @apply p-10 rounded-lg shadow-lg h-40 mt-10;
+  }
+  
+  .start{
+    @apply bg-green-600 p-2 rounded-2xl text-white m-2;
+  }
+  .stop{
+    @apply bg-red-500 p-2 rounded-2xl text-white m-2;
+  }
+  .reset{
+    @apply bg-blue-600 p-2 rounded-2xl text-white m-2;
+  }
+
+  .display{
+    @apply bg-white rounded-lg  shadow-2xl p-3 text-xl;
+  }
+  
+  
+  
